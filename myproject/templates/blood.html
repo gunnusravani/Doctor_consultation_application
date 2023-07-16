@@ -1,0 +1,10 @@
+{% load static %} {% for feature1 in feature %}
+<div style="text-align: center;">
+    <img src="{{ feature1.image }}" width="23%" height="34%">
+    <p>no_of_units_available:{{feature1.no_of_units_available}}</p>
+    <p>contact:{{feature1.contact}}</p>
+    <form method="" action="Book">
+        <button type="submit">Order for blood</button>
+    </form>
+</div>
+<br>{% endfor %}

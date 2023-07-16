@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <style>
+        
+    </style>
+
+</head>
+
+
+<body>
+
+    {% load static %} {% for feature1 in feature %}
+    <div class=" "style="text-align: center;border-style: ridge;">
+        <img src=" {{ feature1.image }} " width="12%" height="12%">
+        <p style="color:blue">Name:{{feature1.name}}</p>
+        <p style="color:aqua">Specialization:{{feature1.specialization}}</p>
+        <p style=" color:rebeccapurple">Experience:{{feature1.experience}}</p>
+        <p style=" color:pink">Rating:{{feature1.rating}}</p>
+        <p style=" color:blue">Fee:{{feature1.fee}}</p>
+        <form method="" action="appoint">
+            <button type="submit">Book for appointment</button>
+        </form>
+    </div>
+    <br> {% endfor %} </body>
+
+</html>

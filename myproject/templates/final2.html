@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid rgb(254, 247, 247);
+        }
+        
+        table.center {
+            margin-left: auto;
+            margin-right: auto;
+            color:white;
+            
+        }
+
+        .bg-text {
+  background-color: rgb(0,0,0); /* Fallback6 color */
+  background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+body{
+    background-color: rgb(242, 227, 246);
+    background-image: url("https://media.istockphoto.com/photos/young-doctor-asking-senior-impaired-male-patient-in-wheelchair-to-picture-id1329039896?b=1&k=20&m=1329039896&s=170667a&w=0&h=yD2akrmb9TUG5htZYCaRZf4b7uL-IFD5btJPk1Xi4xU=");
+    background-repeat: no-repeat;
+  background-size: cover;
+  height:100%;
+  background-color: rgba(0, 0, 0, 0.822);
+}
+    </style>
+</head>
+
+<body>
+    {% csrf_token %}
+  
+    <div class="update">
+    <div class="row">
+        <div class="col-xl-3 col-md-6">
+            <div class="card bg-primary text-white mb-4 card1" >
+                <div class="bg-text">
+                    <h3 style="color:chartreuse">
+                        Your appointments </h3>
+                
+                    <table class="center">
+                        <tr>
+                            <th>Username</th>
+                            <th>Date</th>
+                            <th>Doctorname</th>
+                        </tr>
+                        {% for feature1 in feature %}
+                        <tr>
+                            <td>{{feature1.username}}</td>
+                            <td>{{feature1.Date_of_appointment}}</td>
+                            <td>{{feature1.Docname}}</td>
+                        </tr>
+                        {% endfor %}
+                
+                    </table>
+                </div>
+                <div class="card-footer d-flex align-items-center justify-content-between">
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+</body>
+</html>

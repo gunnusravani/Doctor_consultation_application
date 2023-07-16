@@ -1,0 +1,398 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <style>
+
+ body{
+  /* The image used */
+  background-image: url("https://wallpaperaccess.com/full/624111.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100%;
+  background-color: rgba(0, 0, 0, 0.822);
+}
+
+    #navItem1 {
+            color: white;
+            font-family: "Roboto";
+        }
+        
+        #navItem2 {
+            color: white;
+            font-family: "Roboto";
+        }
+        
+        #navItem3 {
+            color: white;
+            font-family: "Roboto";
+        }
+        
+        #navItem4 {
+            color: white;
+            font-family: "Roboto";
+        }
+        
+        .navlogo {
+            width: 70px;
+            height: 70px;
+            margin-left: 0px;
+        }
+        
+        .logindet {
+            width: 80px;
+            height: 45px;
+            color: white;
+            background-color: green;
+            border-width: 0;
+            border-radius: 8px;
+            margin-right: 10px;
+        }
+        
+        .bg-img-container {
+            height: 100vh;
+            background-image: url("https://media.istockphoto.com/photos/young-doctor-asking-senior-impaired-male-patient-in-wheelchair-to-picture-id1329039896?b=1&k=20&m=1329039896&s=170667a&w=0&h=yD2akrmb9TUG5htZYCaRZf4b7uL-IFD5btJPk1Xi4xU=");
+            background-size: cover;
+            opacity: 100%;
+            height: 100%;
+        }
+        
+        .img-heading {
+            color: black;
+            -webkit-text-stroke: 0.7px white;
+            font-family: "Cambria";
+            font-size: 70px;
+            font-weight: 700;
+            margin-top: 400px;
+        }
+        
+        .img-caption {
+            color: black;
+            font-family: "Cambria";
+            font-size: 30px;
+            font-weight: 300;
+        }
+        
+        .bn632-hover {
+            width: 160px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            cursor: pointer;
+            margin: 20px;
+            height: 55px;
+            text-align: center;
+            border: none;
+            background-size: 300% 100%;
+            border-radius: 50px;
+            moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+        }
+        
+        .bn632-hover:hover {
+            background-position: 100% 0;
+            moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+        }
+        
+        .bn632-hover:focus {
+            outline: none;
+        }
+        
+        .bn632-hover.bn26 {
+            background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+            box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+        }
+
+        *{
+ margin: 0px;
+ padding: 0px;
+}
+
+
+.card{
+     width: 20%;
+     display: inline-block;
+     box-shadow: 2px 2px 20px black;
+     border-radius: 5px; 
+     margin: 2%;
+     margin-top: 50px;
+    }
+
+.card:hover {
+            transform: scale(1.3);
+            z-index: 2;
+        }
+.image img{
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  
+ 
+ }
+
+.title{
+ 
+  text-align: center;
+  padding: 10px;
+  
+ }
+
+h1{
+  font-size: 20px;
+ }
+
+
+button{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding:10px;
+}
+button:hover{
+  background-color: black;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0a1e1b;
+}
+
+ul li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 40px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #0b6254;
+}
+p{
+   color:rgb(249, 253, 254);
+   font-size: large;
+   
+}
+.d1
+{
+  height:400px
+}    
+.d2
+{
+  background-color: #0a1e1b;
+  height:25px;
+  color: white;
+  font-size: larger;
+  padding:5px;
+
+}
+
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback6 color */
+  background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+.bg-text1
+{
+  background-color: rgb(0,0,0); /* Fallback6 color */
+  background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  left: 50%;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+ol
+{
+  align-items: center;
+}
+#about
+{
+  height:400px;
+  align-content: center;
+
+}
+.form1
+{
+    padding: 20px 40px;
+}
+
+
+
+    </style>
+</head>
+
+<body>
+   <!-- 
+    <nav class="navbar navbar-expand-lg " style="background-color: #e3f2fd;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="https://cdn-icons-png.flaticon.com/512/2210/2210378.png" class="navlogo" /></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="/services" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="services">A</a></li>
+                  <li><a class="dropdown-item" href="#">B</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">C</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Service</a>
+              </li>
+            </ul>
+            <form method="GET" action="doctor" class="form-inline">
+              <input type="text" placeholder="Search" name="problem">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+          </div>
+        </div>
+      </nav>
+-->
+      <nav> 
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="20-527-SignUp.html">Signup</a></li>
+            <li><a href="{% url 'login' %}">Login</a></li>
+            <li><a href="#about">About Us</a></li>
+            <form method="GET" action="doctor" class="form1">
+                <input type="text" placeholder="Search" name="problem">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </ul>
+          
+
+    </nav> 
+
+    <div>
+
+    </div>
+    <!--
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container navbar">
+            <a class="navbar-brand" href="#"><img src="https://cdn-icons-png.flaticon.com/512/2210/2210378.png" class="navlogo" /></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto mt-2 mt-lg-0"><a class="nav-link active" id="navItem1" href="#">Home<span class="sr-only">(current)</span></a><a class="nav-link" id="navItem2" href="#">About</a><a class="nav-link" id="navItem3" href="#">Service</a><a class="nav-link" id="navItem4"
+                        href="#">Contact</a>
+                    <a class="nav-link" id="navItem5" href="#">
+                        <form method="" action="login">
+                            {% csrf_token %}
+                            <button class="logindet">LOGIN</button>
+                        </form>
+                    </a>
+                    <form method="GET" action="doctor" class="form-inline">
+                        <input type="text" placeholder="Search" name="problem">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    -->
+ 
+    <div class="card">
+      
+        <div class="image">
+           <img src="https://media.istockphoto.com/photos/young-doctor-asking-senior-impaired-male-patient-in-wheelchair-to-picture-id1329039896?b=1&k=20&m=1329039896&s=170667a&w=0&h=yD2akrmb9TUG5htZYCaRZf4b7uL-IFD5btJPk1Xi4xU=">
+        </div>
+        <div class="title">
+         <h1>
+        Consult a Doctor</h1>
+        </div>
+
+         <form method="" action="doc1"> <button class="bn632-hover bn26 ">Consult a Doctor</button></form>
+        
+        </div>
+
+        <div class="card">
+      
+            <div class="image">
+               <img src="https://swartz-legal.com/wp-content/uploads/2020/08/Anxiety-Disorder-and-the-Family-and-Medical-Leave-Act-FMLA-2000x1000.png">
+            </div>
+            <div class="title">
+             <h1>
+            Anxiety Disorder</h1>
+            </div>
+            <div class="des">
+             <p>You can Add Desccription Here...</p>
+            <a href="https://www.google.com"><button>Read More...</button></a>
+            </div>
+            </div>
+
+            <div class="card">
+      
+                <div class="image">
+                   <img src="https://swartz-legal.com/wp-content/uploads/2020/08/Anxiety-Disorder-and-the-Family-and-Medical-Leave-Act-FMLA-2000x1000.png">
+                </div>
+                <div class="title">
+                 <h1>
+                Anxiety Disorder</h1>
+                </div>
+                <div class="des">
+                 <p>You can Add Desccription Here...</p>
+                <a href="https://www.google.com"><button>Read More...</button></a>
+                </div>
+                </div>cd 
+
+    
+</body>
+
+</html>
